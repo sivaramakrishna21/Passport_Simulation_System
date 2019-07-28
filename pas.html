@@ -1,0 +1,1652 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+<html>
+<head>
+<title>User Registration | Passport Seva</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8; IE=7; IE=6; IE=EDGE" >
+<meta http-equiv="X-Frame-Options" content="deny">
+<link rel="stylesheet" type="text/css" href="/AppOnlineProject/css/mea-style.css">
+<link rel="stylesheet" type="text/css" href="/AppOnlineProject/css/doctextsizer.css">
+<link rel="stylesheet" type="text/css" href="/AppOnlineProject/onlineHtml/testimonial.css">
+<link rel="stylesheet" type="text/css" href="/AppOnlineProject/css/news.css">
+<link rel="stylesheet" type="text/css" href="/AppOnlineProject/css/ui.all.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/AppOnlineProject/css/search.css">
+<meta name="description" content="Description Passport Seva, Ministry of External Affairs, Government of India">
+
+<script language="JavaScript" src="/AppOnlineProject/js/header.js" type="text/javascript"></script> 
+<script language="JavaScript" type="text/javascript" src="/AppOnlineProject/js/doctextsizer.js"></script> 
+</head>
+<table cellpadding="0" cellspacing="0" width="100%" align="center" style="background:silver" role="presentation"> 
+<tr>
+	<td>
+<table cellpadding="0" cellspacing="0" align="center" width="998" role="presentation"  class="Main_Container">
+	<tr>
+		<td>
+			<div class="outer" id="outer">
+			<table align="center" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+				<tr>
+					<td colspan="3" valign="top">
+						
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" language="JavaScript">
+
+function controlMarquee() { 
+
+	var marquee=document.getElementById('marquee'); 
+
+	if(document.getElementById('marqueeControlButton').value=="Pause"){ 
+
+	document.getElementById('marqueeControlButton').value="Start"; 
+	document.getElementById("image1").style.display = "none"; 
+	document.getElementById("image2").style.display = "";
+
+	marquee.stop(); 
+
+	} 
+
+	else if(document.getElementById('marqueeControlButton').value=="Start"){ 
+
+	document.getElementById('marqueeControlButton').value="Pause"; 
+	document.getElementById("image2").style.display = "none"; 
+	document.getElementById("image1").style.display = "";
+
+	marquee.start(); 
+
+	} 
+
+	} 
+
+	function loginSubmit()
+	{
+		document.getElementById("loginId").click();
+		
+	}
+	function registerSubmit()
+	{
+	
+		document.getElementById("registrId").click();
+		
+	}
+
+
+		function changemysize(myvalue,x)
+// this function is called by the user clicking on a text size choice
+	{
+// find the div to apply the text resizing to
+	var div = document.getElementById("outer");
+// apply the text size change
+	div.style.fontSize = myvalue + "px";
+// store the text size choice into a cookie
+	document.cookie="mysize=" + myvalue;
+
+	document.getElementById("sml").style.fontWeight="normal"
+	document.getElementById("mid").style.fontWeight="normal"
+	document.getElementById("big").style.fontWeight="normal"
+	x.style.fontWeight="bold"
+	}
+
+	function checkEmpty()
+	{
+		var val= document.search.query;
+		var str = val.value.replace(/^\s+|\s+$/g,'');
+		if(str=="" || str=="Search...")
+		{
+			alert("please enter a keyword for search.");
+			val.Value="";
+			val.focus();
+			return false;
+		}
+		var iChars = "!@#$%^&*()+=-[]\\\';,./{}|\":<>?~_";
+		   for (var i = 0; i < str.length; i++) {
+		  	if (iChars.indexOf(str.charAt(i)) != -1) {
+		  	  alert ("Please enter only alphanumeric text for the search.");
+		  	  val.value="";
+		  	  val.Value="";
+		  	  val.focus();
+		  	return false;
+		  	}
+		  }	
+		document.search.submit();
+		return true;
+	}
+	function clickclear(thisfield, defaulttext) {
+		if (thisfield.value == defaulttext){
+			thisfield.value = "";
+			thisfield.style.color = '#000001';
+		}
+	}
+	function clickrecall(thisfield, defaulttext) {
+		if (thisfield.value ==defaulttext || thisfield.value=='') {
+			thisfield.value = defaulttext;
+			thisfield.style.color = '#A8A8A8';
+		}
+	}
+	
+	function getInternetExplorerVersion()
+	{
+	   var rv = -1; 
+	   if (navigator.appName == 'Microsoft Internet Explorer')
+	   {   
+	      var ua = navigator.userAgent;
+	      var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+	      if (re.exec(ua) != null)
+	         rv = parseFloat( RegExp.$1 );
+	   }
+	  return rv;
+	}
+	function checkIEVersion()
+	{
+	  
+	   var ver = getInternetExplorerVersion();
+	     if ( ver == 7.0 ){
+	    	  document.getElementById("abtUs").style.width="80px";
+	      	  document.getElementById("abtUs1").style.width="97px";
+	    	  document.getElementById("abtUs2").style.width="97px";
+	    	  document.getElementById("passOffice").style.width="138px";
+	      	  document.getElementById("passportoffices1").style.width="165px";
+	    	  document.getElementById("passportoffices2").style.width="165px";
+	    	  document.getElementById("funcNResponsibility").style.width="192px";
+	      	  document.getElementById("feedbackNComplain").style.width="192px";
+	    	  document.getElementById("cont").style.width="120px";
+	    	  document.getElementById("pass").style.width="110px";
+	    	  document.getElementById("visaoff").style.width="110px";
+	    	  document.getElementById("consular").style.width="110px";
+	    	  document.getElementById("pasgp").style.display="none";
+	    	
+	    
+	      }
+	      
+	     
+	   
+	}	
+	
+	
+	function contpasshide()
+	{
+		
+		document.getElementById("pasgp").style.display="none";
+	}
+	  function setOnFocus(){
+		  
+		 
+		  
+		  if(null!=document.getElementById("sethighlite")){
+		
+		 if (document.getElementById("sethighlite").value=="aboutus"){
+				 document.getElementById("aboutUs").className="active"; 
+				 //document.getElementById("aboutUs1").className="li"; 
+		}   
+		 if (document.getElementById("sethighlite").value=="passportoffices"){
+			 document.getElementById("passportoffices").className="active"; 
+	}   
+		 if (document.getElementById("sethighlite").value=="consularservice"){
+			 document.getElementById("consularservice").className="active"; 
+	}   
+		 if (document.getElementById("sethighlite").value=="visa"){
+			 document.getElementById("visa").className="active"; 
+	}   
+		 if (document.getElementById("sethighlite").value=="rti"){
+			 document.getElementById("rti").className="active"; 
+	}   
+		 if (document.getElementById("sethighlite").value=="contactus"){
+			 document.getElementById("contactus").className="active"; 
+	}   
+		 if (document.getElementById("sethighlite").value=="homefocus"){
+			 document.getElementById("homefocus").className="active"; 
+	}   
+		if (document.getElementById("sethighlite").value=="whatsNew"){
+				 document.getElementById("whatsNew").className="active"; 
+		}   
+	 } 
+	 } 
+	 
+	  window.onload = setOnFocus;
+
+	
+</script>
+<style>
+.Breadcrumbh_Bar{width:100%;}
+.Breadcrumbh_Bar .Brown_BG{background-color:#be5d23;color:#FFF;font-size:12px;font-weight:bold;}
+.Breadcrumbh_Bar .Light_Blue_BG{background-color:#e9eff3;font-size:13px;color:#242323;}
+.Breadcrumbh_Bar .Content_Bar{background-color:#e9eff3;font-size:12px;font-weight:bold;color:#242323;padding-left:5px;padding-right:5px;border: #F00 solid 0px;}
+body
+{  
+  font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color: #000;
+    text-decoration: none;
+    background-color: #FFF;
+}
+</style>
+<script type="text/javascript">
+	
+	function abouthideS(event)
+	{ 
+	if (event.shiftKey==1)
+		{
+			document.getElementById("aboutdply").style.display="none";
+		}
+
+	}
+
+	function aboutdis(e)
+	{ 
+		
+		var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+		
+	    if (e.keyCode == 13 ) {	
+		
+			document.getElementById("aboutdply").style.display="block";
+	    }
+	    if ( e.keyCode == 38 ) {
+	    	document.getElementById("aboutdply").style.display="none";
+	    	
+	    	}
+	}
+	function abouthide()
+	{
+			
+		document.getElementById("aboutdply").style.display="none";
+	}
+	function passportdis(e)
+	{ 
+			var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+	
+		    if (e.keyCode == 13 ) {	
+			
+			document.getElementById("passportdply").style.display="block";
+		    }
+		    if ( e.keyCode == 38 ) {
+		    	document.getElementById("passportdply").style.display="none";
+		    	
+		    	}
+	}
+	function consulardis(e)
+	{ 
+			var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+	
+		    if (e.keyCode == 13 ) {	
+			
+			document.getElementById("consularSublink").style.display="block";
+		    }
+		    if ( e.keyCode == 38 ) {
+		    	document.getElementById("consularSublink").style.display="none";
+		    	
+		    	}
+	}
+	
+	function passporthide()
+	{
+		
+		document.getElementById("passportdply").style.display="none";
+	}
+	function contactdis(e)
+	{
+		var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+		
+  		  if (e.keyCode == 13 ) {	
+		
+			document.getElementById("contactdply").style.display="block";
+    		}
+  		  if ( e.keyCode == 38 ) {
+		    	document.getElementById("contactdply").style.display="none";
+		    	document.getElementById("pasgp").style.display="none";
+		    	
+		    	}
+	}
+	function consularhide()
+	{
+		document.getElementById("consularSublink").style.display="none";
+	}
+	function contacthide()
+	{
+				
+		document.getElementById("contactdply").style.display="none";
+		document.getElementById("pasgp").style.display="none";
+	}
+	function contpassdis(e)
+	{
+		var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+		
+		  if (e.keyCode == 13) {	
+			document.getElementById("pasgp").style.display="block";
+		  }
+		  if ( e.keyCode == 38 ) {
+		    	document.getElementById("pasgp").style.display="none";
+		    	}
+	}
+	function contpassdis(e)
+	{
+		var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+		
+		  if (e.keyCode == 13) {	
+			document.getElementById("pasgp").style.display="block";
+		  }
+		  if ( e.keyCode == 38 ) {
+		    	document.getElementById("pasgp").style.display="none";
+		    	
+		    	}
+	}
+	//My Change
+	function passgp()
+	{
+		var ver = getInternetExplorerVersion();
+        if ( ver == 7.0 ){
+        	if(document.getElementById("pass").focus){
+	    	  document.getElementById("pasgp").style.display="block";
+	    	  document.getElementById("pasgp").style.width="160px";
+	      	  document.getElementById("pass1").style.width="118px";
+	    	  document.getElementById("pass2").style.width="118px";
+	    	  document.getElementById("pass3").style.width="118px";
+	    	  document.getElementById("pass5").style.width="118px";
+	    	  document.getElementById("pass1").style.right="-20px";
+	    	  document.getElementById("pass2").style.right="-20px";
+	    	  document.getElementById("pass3").style.right="-20px";
+	    	  document.getElementById("pass5").style.right="-20px";
+	    	  }
+		}
+	}
+
+	  //MY Change ends
+		
+</script>
+
+
+		<tr>
+			<td align="left" valign="top"><!-- My Change -->
+			<div class="Header_Container">
+		
+			<div class="Top_Blue_Bar">
+		<table width="99%" border="0" align="center" cellpadding="0"
+			cellspacing="0" class="top_bar_white_link">
+			<tr>
+				<td width="45%" align="left" valign="middle">&nbsp;Monday,&nbsp;
+				February&nbsp;&nbsp;25,&nbsp;2019&nbsp;|&nbsp;03:08:22 PM</td>
+				<td style="text-align:center" width="55%">
+					<table width="100%" role="presentation">
+						<tr>
+							<td align="center" valign="middle" id="top">
+								<a href="#main-content">Skip to main content</a>&nbsp;<span>|</span>
+							</td>
+							<td  align="center">
+								<a href="/AppOnlineProject/online/screenReaderAccess">Screen Reader Access</a>&nbsp;<span>|</span>
+							</td>
+							<td align="center">
+								<a href="/AppOnlineProject/online/siteMap" onclick="welcomeLink">Sitemap </a>&nbsp;<span>|</span>
+							</td>
+							<td  align="center">
+								 
+								<a href="/AppOnlineProject/welcomeLink" onclick="welcomeLink"
+									title="Home"> Home </a>
+								
+							</td>
+				<td align="center" valign="middle" bgcolor="#575757">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td align="right" valign="top"><a href="#"
+							class="texttoggler" rel="smallview" style="font-size: 10.5px;"><span
+							title="Decrease Font Size"><strong>A-</strong><span
+							class="hide">Decrease Font Size</span></span></a></td>
+						<td align="right" valign="top"><a href="#" rel="normalview"
+							class="texttoggler" style="font-size: 12px;"><span
+							title="Normal Font Size"><strong>A</strong><span
+							class="hide">Normal Font Size</span></span></a></td>
+						<td align="center" valign="middle"><a href="#"
+							rel="largeview" class="texttoggler" style="font-size: 14px;"><span
+							title="Increase Font Size"><strong>A+</strong><span
+							class="hide">Increase Font Size</span></span></a></td>
+					</tr>
+				</table>
+				</td>
+
+
+				<td align="center" width="27px" >
+				
+					&nbsp;
+				
+			</td></tr></table>	
+	</td>
+			</tr>
+		</table>
+		</div>
+			<div class="Logo_Containter">
+			<table border="0" cellspacing="0" cellpadding="0" width="99%"
+				align="center">
+				<tr>
+					<td width="5%"><span  style="width:43px;float:left;display:inline;height:67px;background:url(/AppOnlineProject/images/homeImages.JPG) -124px -60px;"></span>
+					</td>
+					<td width="36%" height="100">
+					<table width="100%" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td class="Logo_H1">Passport Seva</td>
+						</tr>
+						<tr>
+							<td class="Logo_H4">Consular, Passport &amp; Visa Division<br />
+							Ministry of External Affairs, Government of India</td>
+						</tr>
+					</table>
+					</td>
+					<td width="32%" align="center">
+					&nbsp;
+					</td>
+					<td width="27%" align="right">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							
+							<td align="right" valign="top">
+								<a href="/AppOnlineProject/welcomeLink">
+									<span  title="Passport Seva" style="width:166px;float:right;display:inline;height:54px;background:url(/AppOnlineProject/images/homeImages.JPG) -2px -1px;"></span></a>
+							</td>
+						</tr>
+						<tr>
+							<td align="right" valign="top">
+							
+							
+							        
+<form id="searchFormId" name="search" onsubmit="return checkEmpty();" action="/AppOnlineProject/search" method="post">
+								<label for="searchBox"><input
+									type='text' value='Search...' id='searchBox' name="query"
+									title="Search Box" onfocus="clickclear(this, 'Search...')"
+									onblur="clickrecall(this,'Search...')" maxlength="45" /></label>
+								<div id='button-holder'><label for="search"><input
+									type="submit" id="search" title="Search..." value=""></label></div>
+								
+							</form>
+
+
+
+
+					
+					
+							</td>
+						</tr>
+					</table>
+					</td>
+				</tr>
+			</table>
+			</div>
+			<div class="Navigation_Containter">
+			<div>
+			 
+				<ul class="toplinks" role="navigation">
+				<li class="homefocus">
+					<a style="width:60px;text-align: center" onkeyup="abouthideS(event)" href="/AppOnlineProject/welcomeLink">Home</a>
+				  </li>
+
+				<li id="aboutUs" style="width:90px" onkeyup="aboutdis(event),passporthide()"><a
+					id="abtUs" href="#">About Us&nbsp;<img
+					src="/AppOnlineProject/images/down.gif" alt="arrow down" border="0"></a>
+				<ul id="aboutdply">
+					<li><a id="abtUs1"
+						href="/AppOnlineProject/online/whoAreWe">CPV Division</a></li>
+					<li><a id="abtUs2"
+						href="/AppOnlineProject/online/knowPassportSeva">Passport Seva</a></li>
+				</ul>
+				</li>
+				<li style="width:132px" id="passportoffices" onkeyup="abouthide(),passportdis(event)"><a
+					id="passOffice" href="#">Passport Offices&nbsp;<img
+					src="/AppOnlineProject/images/down.gif" alt="arrow down" border="0"></a>
+				<ul id="passportdply">
+					<li><a id="passportoffices1"
+						href="/AppOnlineProject/online/rpo">Passport Offices in India</a></li>
+					<li><a id="passportoffices2"
+						href="/AppOnlineProject/mission/mission">Mission/Post Abroad</a></li>
+				</ul>
+				</li>
+				
+				<LI style="width:145px" id="consularservice" onkeyup="passporthide(),consulardis(event)"><A
+					id="consularLink" href="javascript:void(0);">Consular Services&nbsp;<img
+					src="/AppOnlineProject/images/down.gif" alt="arrow down" border="0"></A>
+					  		<ul id="consularSublink">
+					  		<li><a id="funcNResponsibility"  href="/AppOnlineProject/online/consularServices">Functions & Responsibilities</a></li>
+						     <li><a id="feedbackNComplain"  href="http://madad.gov.in/"  target="_blank">Log and Track Grievances</a></li>
+						  </ul>	
+				</li>
+
+				<li id="visa" onkeyup="consularhide()" style="width:112px"><a
+					href="/AppOnlineProject/online/visaServices">Visa Services</a></li>
+
+				<li id="rti" style="text-align: center" onkeyup="contacthide()"><a
+					href="/AppOnlineProject/online/rti">RTI</a></li>
+					<li id="citizenCharter" style="text-align: center"
+									onkeyup="contacthide()"><a
+									href="/AppOnlineProject/pdf/Citizen_Charter.pdf" target="_blank">Citizens' Charter</a>
+				</li>
+				<li id="contactus" style="width:117px" onkeyup="contactdis(event)"><a id="cont"
+					href="#">Contact Us&nbsp;<img
+					src="/AppOnlineProject/images/down.gif" alt="arrow down" border="0"></a>
+				<ul id="contactdply">
+					<li onkeyup="contpassdis(event)"><a id="pass"
+						onmouseover="passgp();" href="#"><img
+						src="/AppOnlineProject/images/left.gif" alt="Left Arrow"
+						border="0" class="contactDiv">Passport</a>
+					<ul id="pasgp">
+						<li><a id="pass1"
+							href="/AppOnlineProject/online/callCenter">General Information</a></li>
+						<li><a id="pass2"
+							href="/AppOnlineProject/online/chiefOfficer">Chief Passport Officer</a></li>
+						<li><a id="pass3"
+							href="/AppOnlineProject/online/rpo">Passport Offices</a></li>
+						<li><a id="pass5"
+							href="/AppOnlineProject/online/vigilance">Vigilance Unit</a></li>
+
+					</ul>
+
+					</li>
+					<li onkeyup="contpasshide()"><a id="visaoff"
+						href="/AppOnlineProject/online/consularOfficers">Visa Services</a></li>
+					<li><a id="consular"
+						href="/AppOnlineProject/online/consularOfficers">Consular Services</a></li>
+				</ul>
+				</li>
+				<li id="whatsNew" onkeyup="contacthide()"><a
+					href="/AppOnlineProject/online/whatsNew">What's New</a></li>
+			</ul>
+			
+			
+
+			</div>
+			</div>
+
+
+			</div>
+			<!-- My Change Ends --></td>
+		</tr>
+		
+	<!-- header-->
+			<tr>
+		<td align="left" valign="top" height="3"></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top"><!--Marquee Section-->
+		<div>
+		
+<table class="Breadcrumbh_Bar">	
+		<marquee>A scrolling text created with HTML Marquee element.</marquee>
+<tr>
+		  <td width="70"><span  style="width:8px; float:left; display:inline; height:23px; background:url(/AppOnlineProject/images/breadcrumbh_arrow.jpg) -0px -5px;"></span></td>
+          <td class="Light_Blue_BG">
+          	<div class="Content_Bar">
+			<marquee>A scrolling text created with HTML Marquee element.</marquee>
+          		<marquee behavior="scroll" direction="left" id="marquee" onkeydown="this.setAttribute('scrollamount', 0, 0);" onmouseover="this.setAttribute('scrollamount', 0, 0);" onmouseout="this.setAttribute('scrollamount', 6, 0);"><strong>380 POPSKs have been made operational in the Country.** New Tatkaal Scheme Launched. For details please refer The Gazette of India - G.S.R. 39(E) under Latest News section on the portal ** No applicants would be serviced at PSK/POPSK without prior online appointment.** Please refer 'Passport Office Page' for more details.</strong>
+          		</marquee> 
+          	</div>
+          </td>
+          <td width="22" align="center" valign="middle" class="Light_Blue_BG">
+          	<input type="button" value="Pause" id="marqueeControlButton" onClick="controlMarquee();" style="display:none">
+          	<img id ="image1" alt="stop" src="/AppOnlineProject/images/pause.jpg" width="19" height="19"  onClick="controlMarquee();"/>
+          	<img id ="image2" alt="start" width="19" height="19" src="/AppOnlineProject/images/play.png"  onClick="controlMarquee();" style="display:none;"/>
+          </td>
+        </tr>
+        </table>			
+</div>
+
+
+		<!--Marquee Section--></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="3"></td>
+	</tr>
+	<!-- header-->
+
+<script type="text/javascript">
+documenttextsizer.setup("texttoggler")
+checkIEVersion();
+</script>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" valign="top">
+					<table align="center" role="presentation">
+					<tr>
+					<td valign="top" >
+					
+
+
+
+
+<!-- Information Corner Dropdown-->
+<script type="text/javascript">
+
+//Nested Side Bar Menu (Mar 20th, 09)
+//By Dynamic Drive: http://www.dynamicdrive.com/style/
+
+var menuids=["sidebarmenu1"] //Enter id(s) of each Side Bar Menu's main UL, separated by commas
+
+function initsidebarmenu(){
+for (var x=0; x<menuids.length; x++){
+  var ultags=document.getElementById(menuids[x]).getElementsByTagName("ul")
+    for (var t=0; t<ultags.length; t++){
+    ultags[t].parentNode.getElementsByTagName("a")[0].className+=" subfolderstyle"
+  if (ultags[t].parentNode.parentNode.id==menuids[x]) //if this is a first level submenu
+   ultags[t].style.left=ultags[t].parentNode.offsetWidth+"px" //dynamically position first level submenus to be width of main menu item
+  else //else if this is a sub level submenu (ul)
+    ultags[t].style.left=ultags[t-1].getElementsByTagName("a")[0].offsetWidth+"px" //position menu to the right of menu item that activated it
+    ultags[t].parentNode.onmouseover=function(){
+    this.getElementsByTagName("ul")[0].style.display="block"
+    }
+    ultags[t].parentNode.onmouseout=function(){
+    this.getElementsByTagName("ul")[0].style.display="none"
+    }
+    }
+  for (var t=ultags.length-1; t>-1; t--){ //loop through all sub menus again, and use "display:none" to hide menus (to prevent possible page scrollbars
+  ultags[t].style.visibility="visible"
+  ultags[t].style.display="none"
+  }
+  }
+}
+
+if (window.addEventListener)
+window.addEventListener("load", initsidebarmenu, false)
+else if (window.attachEvent)
+window.attachEvent("onload", initsidebarmenu)
+
+</script>
+<!-- Information Corner Dropdown-->
+
+
+<script type="text/javascript">
+function blinks()
+{
+	var i = document.getElementById("blinkFlag").value;
+	if(i=="0"){
+		document.getElementById("blinkFlag").value="1";
+		document.getElementById("blinkAw").style.display='block';
+		
+        
+	        
+}
+	else{
+		document.getElementById("blinkFlag").value="0";
+		document.getElementById("blinkAw").style.display='none';
+	
+
+        
+
+        
+		
+		}
+	}
+
+function popup(mylink, windowname)
+{	
+	document.appointment.target = "_blank";
+	window.open(mylink, windowname, 'width=600,resizable=no,scrollbars=yes');
+	return false;
+}
+
+
+
+function quickdis(e)
+{ 
+	
+	var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+
+    if (e.keyCode == 40 ) {	
+	
+		document.getElementById("quickSub").style.display="block";
+    }
+    if ( e.keyCode == 38 ) {
+    	document.getElementById("quickSub").style.display="none";
+    	
+    	}
+}
+function faqdis(e)
+{ 
+	
+	var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+
+    if (e.keyCode == 40 ) {	
+	
+		document.getElementById("faqSub").style.display="block";
+    }
+    if ( e.keyCode == 38 ) {
+    	document.getElementById("faqSub").style.display="none";
+    	
+    	}
+}
+
+function quickhide(e)
+{ 
+	var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+	
+	if (e.keyCode == 9)
+	{
+		document.getElementById("quickSub").style.display="none";
+	}
+
+}
+function faqhide(e)
+{ 
+	var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+	
+	if (e.keyCode == 9)
+	{
+		document.getElementById("faqSub").style.display="none";
+	}
+
+}
+function quickMouseOv()
+{ 
+	document.getElementById("quickSub").style.display="block";
+}
+function quickMouseOu()
+{ 
+	document.getElementById("quickSub").style.display="none";
+}
+function faqMouseOv()
+{ 
+	document.getElementById("faqSub").style.display="block";
+}
+function faqMouseOu()
+{ 
+	document.getElementById("faqSub").style.display="none";
+}
+function passportActdis(e)
+{ 
+	
+	var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+
+     if (e.keyCode == 40 ) {	
+	
+		document.getElementById("passportActSub").style.display="block";
+    }	
+    if ( e.keyCode == 38 ) {
+    	document.getElementById("passportActSub").style.display="none";
+    	
+    	}
+}
+function passportActMouseOv()
+{ 
+	document.getElementById("passportActSub").style.display="block";
+}
+function passportActMouseOu()
+{ 
+	document.getElementById("passportActSub").style.display="none";
+}
+function passportActhide(e)
+{ 
+	var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+	
+	if (e.keyCode == 9)
+	{
+		document.getElementById("passportActSub").style.display="none";
+	}
+
+}
+
+function pskMap(){
+	window.open('/AppOnlineProject/pdf/pskMap.pdf','PSKMap','resizable=1,scrollbars=0,toolbar=0, menubar=0,directories=0');
+}
+
+</script>
+
+<div id="main-content" class="block_left">
+               <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr><td align="left" valign="top">
+                	<div class="Information_Corner_Box" style="width : 255px"/>
+                    <div class="Information_Corner_BG"><span>Information Corner</span></div>
+                    <div class="Information_Corner_List" id="information" style="display: block">
+                      <div class="sidebarmenu">
+                        <ul id="sidebarmenu1">
+                          <li onkeyup="passportActhide(event)">
+                          	<a href="/AppOnlineProject/online/welComeMessage">
+                          		Getting Started
+                          	</a>
+                          </li>
+                          <li id ="passportAct" onkeyup="passportActdis(event)" onmouseover ="passportActMouseOv()" onmouseout="passportActMouseOu()">
+				<a href="/AppOnlineProject/online/PassportAct">
+				Passport Act and Rules
+				</a>
+			<UL id="passportActSub" style="z-index:1;" >
+				<LI><a
+					href="/AppOnlineProject/pdf/passports_act.pdf"
+					target="_blank"  />Passport Act 1967</a></LI>
+				<LI><a
+					href="/AppOnlineProject/pdf/Passport_Rules_1980.pdf"
+					target="_blank">Passport Rules 1980</a></LI>
+				<LI><a
+				href="/AppOnlineProject/online/notifications"
+				>Notifications</a></LI>
+			</UL>
+
+			
+</li>
+						 
+             
+			
+						  <li  onkeyup="faqdis(event),passportActhide(event)"  onmouseover ="faqMouseOv()" onmouseout="faqMouseOu()" style="z-index:1;">
+							<a href="/AppOnlineProject/online/faqMainPage" target="" title="">FAQs
+							</a>
+							<UL  id ="faqSub">
+								<LI>
+									<A href="/AppOnlineProject/online/faqServicesAvailable" target="" title="">
+										Services Available
+									</A>
+								</LI>
+								<LI>
+									<A href="/AppOnlineProject/online/faqWhereToApply" target="" title="">
+										Where to apply?
+									</A>
+								</LI>
+								<LI>
+									<A href="/AppOnlineProject/online/faqApplicationForm" target="" title="">
+										Application Form
+									</A>
+								</LI>
+								<LI>
+									<A href="/AppOnlineProject/online/faqFeePayment" target="" title="">
+										Fee Payment
+									</A>
+								</LI>
+								<LI>
+									<A href="/AppOnlineProject/online/faqResetPassword" target="" title="">
+										Password Management
+									</A>
+								</LI>
+								<LI>
+									<A href="/AppOnlineProject/online/faqPoliceVerification" target="" title="">
+										Police Verification
+									</A>
+								</LI>
+								<LI><A
+									href="/AppOnlineProject/online/faqPostalDispatchTracking"
+									target="" title="">Postal Dispatch</A></LI>
+								<LI><A
+									href="/AppOnlineProject/online/faqCallCentre"
+									target="" title="">Call Centre</A></LI>
+								<LI><A
+									href="/AppOnlineProject/online/faqLostDamagedPassports"
+									target="" title="">Lost/Damaged Passports</A></LI>
+								<LI><A
+									href="/AppOnlineProject/online/faqTatkaalPassports"
+									target="" title="">Tatkaal Passports</A></LI>
+								<LI><A
+									href="/AppOnlineProject/online/faqIdentityCertificate"
+									target="" title="">Identity Certificate</A></LI>
+								<LI><A
+									href="/AppOnlineProject/online/faqMiscellaneous"
+									target="" title="">Miscellaneous</A></LI>
+								<LI><A href="/AppOnlineProject/online/faqLocPermits"
+									target="" title="">LoC Permit</A></LI>
+								<LI><A href="/AppOnlineProject/online/faqCamp"
+									target="" title="">Passport Seva Camp </A></LI>
+								<LI><A href="/AppOnlineProject/online/faqSurrender"
+									target="" title="">Surrender Certificate</A></LI>
+								<LI><A href="/AppOnlineProject/online/faqAliasName"
+									target="" title="">Alias Name</A></LI>
+							</UL>
+
+						</li>
+		
+		  
+						  <li onkeyup="faqhide(event)">
+						  	<a href="/AppOnlineProject/locatePSK/locatePFCInp">
+						  		Locate Passport Seva Kendra
+						  	</a>
+						  </li>
+						  
+						  <li>
+						  	<a href="http://csc.gov.in/index.php?option=com_content&view=article&id=228&Itemid=401" target="_blank">
+						  		Locate Common Service Centers
+						  	</a>
+						  </li>
+						  
+						  <li>
+						  	<a href="/AppOnlineProject/fee/feeInput" target="">
+						  		Fee Calculator
+						  	</a>
+						  </li>
+						  
+						  <li >
+						  	<a href="/AppOnlineProject/online/apptAvailStatus">
+						  		Appointment Availability Status
+						  	
+						  	<b><span style="color: #ff0000; font-size: 10px;">&nbsp;
+						  		<sup>New!</sup>
+						  		</span>
+						  	</b></a> 
+						  </li>
+						  
+						  <li onkeyup="quickhide(event)">
+						  	<a href="/AppOnlineProject/online/LocatePoliceStation">
+						  		Know your Police Station
+						  	</a>
+						  </li>
+						  
+						  <li id ="quickG" onkeyup="quickdis(event)" onmouseover ="quickMouseOv()" onmouseout="quickMouseOu()" style="z-index:1;">
+						  	<a href="/AppOnlineProject/online/QuickGuide">
+						  		Quick Guides
+						  	</a>
+							<UL id ="quickSub" style="width:200px">
+								<LI>
+									<a href="http://www.slideshare.net/passportindia/steps-to-apply-for-passport-services/1" target="_blank"  />
+										Apply for passport
+									</a>
+								</LI>
+								<LI>
+									<a href="http://www.slideshare.net/passportindia/filling-passport-application-form-online-21818509/1" target="_blank">
+										Fill Passport form online
+									</a>
+								</LI>
+								<LI>
+									<a href="/AppOnlineProject/pdf/New_Online_Appointment_Booking_Process.pdf" target="_blank">
+										Appointment Booking Process
+									</a>
+								</LI>
+								<LI>
+									<a href="http://www.slideshare.net/passportindia/steps-to-submit-an-application-at-passport-seva-kendra/1" target="_blank">
+										Submit an Application at PSK
+									</a>
+								</LI>
+								<LI>
+									<a href="http://www.slideshare.net/passportindia/steps-to-check-application-status/1" target="_blank">
+										Check Application Status
+									</a>
+								</LI>
+							</UL>
+
+						  </li>
+						
+						  <li onkeyup="quickhide(event)">
+						  	<a href="/AppOnlineProject/online/appointment" onclick="return openPopupForSms(this,'Appointment')" id="AppointmentId" target="_blank">
+						  		Tatkaal Appointment Opening Time
+						  	</a>
+						  </li>
+						  
+						  <li onkeyup="faqhide(event)">
+						  	<a href="/AppOnlineProject/pdf/ApplicationformInstructionBooklet-V3.0.pdf" target="_blank">
+						  		Instructions Booklet
+						  	</a>
+						  </li>
+						  
+						  <li>
+						 	<a href="#" onclick="pskMap();" style="cursor: pointer;">All India Network of Passport Services
+						  	</a>
+						  </li>
+						  
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  	  <div style="float:left; width:255px; border:#496cae solid 1px;">
+                      <div class="Information_Corner_BG"><span>Forms and Affidavits</span></div>
+                      <div class="Information_Corner_List">
+					  <div class="sidebarmenu">
+                            <ul>
+                              <li class="subtooltip" style="height:30px;line-height:18px;" >
+                              	<a href="/AppOnlineProject/online/downloadEFormStatic" target="">
+                              		Download e-Form 
+                              	</a>
+                              	<UL style="margin-left: 58px;visibility:visible;z-index:1;">
+									<LI><table style="margin:0" > 
+ 										 <tr>  
+											<td>Applicants using eForm, download soft copy of the eForm, fill the same off-line and then must upload it back. The printed copy of the eForm will not be accepted at PSK/RPO.  
+ 										 </tr>    
+										</table> 
+									</LI>
+								</UL>
+                         	</li>
+                              <li>
+                              	<a href="/AppOnlineProject/online/annexureAffidavit" target="">
+                              		Annexures (Affidavits)
+                              	</a>
+                              </li>
+                              <li>
+                              	<a href="/AppOnlineProject/online/printForm" target="">
+                              		Print Application Form
+                              	</a>
+                              </li>
+                              <li>
+                              	<a href="/AppOnlineProject/pdf/GSR_570_dtd_25.08.93.pdf" target="_blank">
+                              		Undertaking as per GSR 570 (E)
+                              	</a>
+                              </li>
+                            </ul>
+							</div>
+                          </div>
+                        </div>
+				  <div style="float:left; width:255px; border:#496cae solid 1px;">
+                          <div class="Information_Corner_BG"><span>Feedback and Grievance</span></div>
+                        	 <div class="Information_Corner_List">
+                        	 <div class="sidebarmenu">
+                       	  			<ul>
+		
+										<li style="line-height: 25px; background-position-y: 10px;"><a style="background-position-y: 10px;" href="/AppOnlineProject/pdf/Dissemination_of_Information.pdf" target="_blank">
+												How to access Information and log Grievance</a>
+										</li>
+										<li><a href="/AppOnlineProject/ccgm/callCenterOnlineGrievance" target="">
+                             		 						Grievance/Feedback  
+                             		 					</a></li>
+										<li><a href="/AppOnlineProject/ccgm/trackServiceRequest" target="">
+                              								Track Grievance Status
+                              							</a></li>
+							
+										<li><a
+											href="/AppOnlineProject/ccgm/informationAction"
+											target="">Information</a></li>
+							
+										
+									</ul>
+							</div>
+							</div>
+						</div>
+						
+					<div style="float:left; width:255px; border:#496cae solid 1px;">
+                          <div class="Information_Corner_BG"><span>Value Added Services</span></div>
+                        	<div class="Information_Corner_List">
+                       	   		<div class="sidebarmenu">
+                       	  			<ul>
+		
+										
+			
+			<li>
+			<table width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+                            <td width="55%" height="25" align="left" valign="middle" style="background-color:#f2f2f2"><a style="border-right:0px;" href="/AppOnlineProject/user/mPassportSevaDownload">mPassport Seva App</a></td>
+                            <td width="45%" height="25" align="right" style="background-color:#f2f2f2;border-top:#cacaca 1px solid;">
+								<a style="display:inline;padding:0px 0px 0px 0px;border:0px solid;" href="https://play.google.com/store/apps/details?id=gov.mea.psp" class="hyperlink" target="_blank" title="Android (External link that opens in a new window)">
+			<span  style="padding-top:3px;padding-right:4px;width:21px;float:left;display:inline;height:27px;background:url(/AppOnlineProject/images/Valueimages.png) -5px 0;"></span>
+			</a>
+			<a style="display:inline;padding:0px 0px 0px 0px;border:0px solid;"  href="https://itunes.apple.com/us/app/mpassport-seva/id723492146?ls=1&amp;mt=8" class="hyperlink" target="_blank" title="Apple (External link that opens in a new window)">
+			<span  style="padding-right:4px;width:22px;float:left;display:inline;height:27px;padding-top:3px;background:url(/AppOnlineProject/images/Valueimages.png) -37px 0;"></span></a>
+			<a style="display:inline;padding:0px 0px 0px 0px;border:0px solid;"  href="http://www.windowsphone.com/en-in/store/app/mpassport-seva/c0ddaf8e-11a2-4248-a3f1-a7279f16c831" class="hyperlink" target="_blank" title="Windows (External link that opens in a new window)">
+			<span  style="padding-right:9px;width:16px;float:left;display:inline;padding-top:3px;height:27px;background:url(/AppOnlineProject/images/Valueimages.png) -72px 0;"></span></a>
+			<a style="display:inline;padding:0px 0px 0px 0px;border:0px solid;"  href="http://appworld.blackberry.com/webstore/content/55870889/?lang=en&countrycode=IN" class="hyperlink" target="_blank" title="BlackBerry (External link that opens in a new window)">
+			<span  style="width:26px;padding-right:4px;float:left;display:inline;height:27px;padding-top:3px;background:url(/AppOnlineProject/images/Valueimages.png) -104px 0;"></span></a>				 
+			</td>	
+</tr>
+			</table>
+			 </li>
+			 <li><a 
+				href="/AppOnlineProject/online/PspStaticContent"  
+				onclick="return openPopupForSms(this,'PspStaticContent')">Premium SMS Services</a>
+			</li>
+			
+			<li><a 
+				href="/AppOnlineProject/online/passportProtectiveCover"  
+				onclick="return openPopupForSms(this,'PassportProtectiveCover')">Protective Passport Cover</a>
+			</li> 
+			
+		</ul>
+		</div>
+		</div>
+						</div>
+					</td>
+                        </tr>
+                        </table>
+                        
+		</div>			
+
+<script type="text/javascript">
+</script>
+					</td>
+					<td valign="top">
+						
+
+
+
+
+<script type="text/javascript" language="JavaScript" src="/AppOnlineProject/js/dateValidate.js"></script>
+<script type="text/javascript" language="JavaScript" src="/AppOnlineProject/js/userRegistration.js"></script>
+
+<script type="text/javascript" src="/AppOnlineProject/js/jquery-1.11.2.min.js"></script> 
+<script type="text/javascript" src="/AppOnlineProject/js/jquery-1.11.2.-ui.min.js"></script>
+
+<script type="text/javascript" src="/AppOnlineProject/js/jquery-1.11.2.min.js"></script> 
+<script type="text/javascript" src="/AppOnlineProject/js/jquery-1.11.2.-ui.min.js"></script>
+<script type="text/javascript" language="JavaScript">  
+   jQuery(function($){ //on document.ready  
+    	
+    	  $('#dob').datepicker({showOn: 'both', buttonImageOnly: true, buttonImage: '/AppOnlineProject/images/ico_cal.gif',dateFormat: 'dd/mm/yy',changeMonth: true,changeYear: true,yearRange: '1890:2099'});
+    		 $('img.ui-datepicker-trigger').css({'cursor' : 'pointer', "vertical-align" : 'middle'});
+    	
+    });
+
+
+function belongsTo(value)
+{
+	if(value=='1')
+	{
+		 window.open('/AppOnlineProject/onlineHtml/ahmedabadpsk.html','ahmedabad','width=700,height=300,left=300,top=100');
+	}
+	if(value=='36')
+	{
+		 window.open('/AppOnlineProject/onlineHtml/suratpsk.html','surat','width=700,height=300,left=300,top=100');
+	}
+	if(value=='10')
+	{
+		 window.open('/AppOnlineProject/onlineHtml/chandigarhpsk.html','chandigarh','width=700,height=300,left=300,top=100,scrollbars=yes');
+	}
+	if(value=='27')
+	{
+		 window.open('/AppOnlineProject/onlineHtml/maduraipsk.html','madurai','width=700,height=300,left=300,top=100');
+	}
+	if(value=='38')
+	{
+		 window.open('/AppOnlineProject/onlineHtml/trichypsk.html','trichy','width=700,height=300,left=300,top=100');
+	}
+	if(value=='2')
+	{
+		 window.open('/AppOnlineProject/onlineHtml/amritsarpsk.html','amritsar','width=700,height=300,left=300,top=100');
+	}
+	if(value=='23')
+	{
+		 window.open('/AppOnlineProject/onlineHtml/jaipurPsk.html','jaipur','width=700,height=300,left=300,top=100');
+	}
+	if(value=='37')
+	{
+		 window.open('/AppOnlineProject/onlineHtml/thanepsk.html','thane','width=700,height=300,left=300,top=100');
+	}
+	//CR-2-Online-05934 Starts
+	if(value=='25')
+	{
+		 window.open('/AppOnlineProject/onlineHtml/lucknowpsk.html','lucknow','width=700,height=400,left=300,top=100');
+	}
+	//CR-2-Online-05934 Ends
+	//CR-2-Online-06141 Begins
+	if(value=='21')
+	{
+		 window.open('/AppOnlineProject/onlineHtml/jalandharpsk.html','jalandhar','width=700,min-height=450,left=300,top=100');
+	}
+	//CR-2-Online-06141 Ends
+	//CR-2-Online-06174 Begins
+	if(value=='8')
+	{
+		 window.open('/AppOnlineProject/onlineHtml/kolkatapsk.html','kolkata','width=700,min-height=450,left=300,top=100');
+	}
+	//CR-2-Online-06174 Ends
+}
+
+ function checkSubmit(e)
+ {
+	if(e && e.keyCode == 13)
+	{
+		document.getElementById("register").click();
+	}
+ }
+
+ function alertDiplForm(cpvLocation) {
+	 if(cpvLocation.value != "PO"){
+         document.getElementById('dcdrLocation').value='';
+    	 document.getElementById('poBlock').style.display="none";
+  		}else{
+  			document.getElementById('poBlock').style.display='';
+ 		}
+}
+</script>
+
+
+<div  class="breadcrumb"> 
+<span>You are here : <a href="/AppOnlineProject/welcomeLink">Home</a> &gt; <strong>Register Now</strong></span>
+<br><br>
+</div>
+<div class="block_right_inner">
+	<div class="hd_blue">User Registration</div><div class="mandatory_msg">Fields marked with asterisk (<span class="mandatory">*</span>) are mandatory</div>
+	<div style="LINE-HEIGHT: 20PX;"><strong>Important Information:</strong> Passport application can be processed at any PSK/POPSK/PSLK WITHIN INDIA irrespective of your residential address.  
+<ul style="margin-top:-8px;">
+<li><a href="https://portal1.passportindia.gov.in/AppOnlineProject/online/apptAvailStatus" target="_blank">Click here </a> to check the appointment availability at all PSK/POPSK/PSLK.</li>
+<li><a href="https://portal2.passportindia.gov.in/AppOnlineProject/pdf/CIR_0186917_Y.pdf" target="_blank">Click here</a> to know more about Apply Anywhere in India scheme for Passport Services.</li>
+</ul></div>
+	<p></p>
+	<form id="frmSample" name="frmSample" action="/AppOnlineProject/user/UserRegistrationActionDBAuth" method="post">
+       <table cellpadding="3" cellspacing="0" width="100%" align="center" role="presentation">
+			<tr>
+					<td colspan="3">
+						
+						
+					</td>
+				</tr>
+			<tr>
+				<td colspan="2">
+					<fieldset style="display:inline; border:none;">
+					<legend style="width:164px;float:left;text-align:left;margin-left:-2px;color:#000;">
+					Register to apply at<span class="mandatory">*</span></legend>
+					<span style="float:left;width:150px; margin: -15px 0 0 40px;">
+					<br><input type="radio" name="cpvLocation" id="cpvLocation13" value="13" onclick="alertDiplForm(this)"/><label for="cpvLocation13">CPV Delhi</label>
+<br><input type="radio" name="cpvLocation" id="cpvLocationPO" checked="checked" value="PO" onclick="alertDiplForm(this)"/><label for="cpvLocationPO">Passport Office</label>
+<div id="wwgrp_cpvLocation" class="wwgrp">
+<div id="wwctrl_cpvLocation" class="wwctrl">
+</div> </div>
+
+					</span>	
+				</fieldset>
+				</td>
+				<td>
+					<span style="font-size: 10px;">Select the 'CPV Delhi' option to apply for Diplomatic/Official passport at Consular, Passport and Visa (CPV) division, Delhi.</span>
+					</td>
+			</tr>	
+			<tr id="poBlock" style="null">
+				<td width="30%">
+					<span style="display: block;"><label for="dcdrLocation">Passport Office <span class="mandatory">*</span></label>&nbsp;</span>
+					<span style="font-size:10px">(As per Present Residential Address)</span>
+				</td>
+				<td>
+				
+					<select name="dcdrLocation" id="dcdrLocation" class="dropdown-box" aria-required="true" aria-describedby="tibDesc">
+    <option value=""
+    >----- Select -----</option>
+    <option value="1">Ahmedabad</option>
+    <option value="2">Amritsar</option>
+    <option value="4">Bareilly</option>
+    <option value="5">Bengaluru</option>
+    <option value="7">Bhopal</option>
+    <option value="3">Bhubaneswar</option>
+    <option value="10">Chandigarh</option>
+    <option value="26">Chennai</option>
+    <option value="11">Cochin</option>
+    <option value="9">Coimbatore</option>
+    <option value="14">Dehradun</option>
+    <option value="15">Delhi</option>
+    <option value="18">Ghaziabad</option>
+    <option value="16">Goa</option>
+    <option value="17">Guwahati</option>
+    <option value="19">Hyderabad</option>
+    <option value="23">Jaipur</option>
+    <option value="21">Jalandhar</option>
+    <option value="22">Jammu</option>
+    <option value="8">Kolkata</option>
+    <option value="24">Kozhikode</option>
+    <option value="25">Lucknow</option>
+    <option value="27">Madurai</option>
+    <option value="6">Mumbai</option>
+    <option value="29">Nagpur</option>
+    <option value="30">Patna</option>
+    <option value="31">Pune</option>
+    <option value="33">Raipur</option>
+    <option value="32">Ranchi</option>
+    <option value="35">Shimla</option>
+    <option value="34">Srinagar</option>
+    <option value="36">Surat</option>
+    <option value="38">Tiruchirappalli</option>
+    <option value="39">Trivandrum</option>
+    <option value="321">Vijayawada</option>
+    <option value="40">Visakhapatnam</option>
+
+
+</select>
+<div id="wwgrp_dcdrLocation" class="wwgrp">
+<div id="wwctrl_dcdrLocation" class="wwctrl">
+</div> </div>
+
+					<span class="hide" id="tibDesc">Tibetan Refugees applying for Identity Certificate must register with 'Delhi' Passport Office.</span>
+					
+				</td>
+				<td style="font-size: 10px;">
+					  Tibetan Refugees applying for Identity Certificate must register with 'Delhi' Passport Office.
+					 </td>
+			</tr>
+
+			<tr>
+				<td width="30%">
+					<label for="givenName">Given Name&nbsp;<span style="font-size:10px">(Max 45 Characters)</span><span class="mandatory">*</span></label>
+				</td>
+				<td width="27%"><input type="text" name="givenName" maxlength="45" value="" id="givenName" class="txtbox" onblur="validateName(this.value);" aria-required="true" aria-describedby="nameDesc"/><div id="wwgrp_givenName" class="wwgrp">
+<div id="wwctrl_givenName" class="wwctrl">
+</div> </div>
+
+					<span class="hide" id="nameDesc">First Name + Middle NameInitials and honorifics (e.g. Dr.,Col.,etc.) are not allowed.</span>
+					
+				</td>
+				<td style="font-size: 10px;">
+					<strong>First Name + Middle Name</strong>
+                   	<br>Initials and honorifics (e.g. Dr.,Col.,etc.) are not allowed.
+				</td>
+ 			</tr>
+
+			<tr>
+				<td><label for="surname">Surname&nbsp;<span style ="font-size:10px">(Max 45 Characters)</span></label></td>
+				<td colspan="2"><input type="text" name="surname" maxlength="45" value="" id="surname" class="txtbox" onblur="validateSurname(this.value);" aria-describedby="surnameDesc"/><div id="wwgrp_surname" class="wwgrp">
+<div id="wwctrl_surname" class="wwctrl">
+</div> </div>
+
+					<span class="hide" id="surnameDesc"></span>
+					
+				</td>
+			</tr>
+	 		
+			<tr>
+				<td><label for="dob">Date of Birth (DD/MM/YYYY)<span class="mandatory">*</span></label></td>
+				<td colspan="2">
+					
+					
+						<input type="text" name="dob" maxlength="10" value="DD/MM/YYYY" id="dob" class="txtbox" onclick="clickclear(this, 'DD/MM/YYYY')" onfocus="this.style.color='#000000'" onblur="clickrecall(this,'DD/MM/YYYY');validateDate(this.value);" onkeyup="clickclear(this, 'DD/MM/YYYY')" onchange="clickrecall(this,'DD/MM/YYYY')" aria-required="true" autocomplete="off" aria-describedby="dateformatDesc"/><div id="wwgrp_dob" class="wwgrp">
+<div id="wwctrl_dob" class="wwctrl">
+</div> </div>
+
+						<span class="hide" id="dateformatDesc">(provide date in DD/MM/YYYY format)</span>
+						
+			    	 
+				</td>
+ 			</tr>
+
+			<tr>
+					<td><label for="email">E-mail Id<span style="font-size:10px">&nbsp;(Max 35 Characters)</span><span class="mandatory">*</span></label></td>
+					<td colspan="2">
+						<input type="text" name="email" maxlength="35" value="" id="email" class="txtbox" onblur="blah3(this.value);" aria-required="true" aria-describedby="emailError"/><div id="wwgrp_email" class="wwgrp">
+<div id="wwctrl_email" class="wwctrl">
+</div> </div>
+
+						<span class="hide" id="emailError"></span>
+					</td>
+				</tr>
+			<tr>
+			<td colspan="3">
+			<fieldset style="display:inline; border:none;">
+			<legend style="line-height:15px;float:left;text-align:right;margin-left:-2px;color:#000;">Do you want your Login Id<br>to be same as E-mail Id?</legend>
+   				
+					<span style="float:left;width:150px;margin: 0 0 0 67px"><input type="radio" name="emailloginSame" id="emailloginSameyes" value="yes" onclick="blah(this.value)"/><label for="emailloginSameyes">Yes</label>
+<input type="radio" name="emailloginSame" id="emailloginSameno" checked="checked" value="no" onclick="blah(this.value)"/><label for="emailloginSameno">No</label>
+<div id="wwgrp_emailloginSame" class="wwgrp">
+<div id="wwctrl_emailloginSame" class="wwctrl">
+</div> </div>
+
+</span>	
+					 <span class="hide" id="emailloginSameError"></span>
+			
+			</fieldset>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<input type="submit" id="checkLogin" name="action:UserRegistrationActionDBAuth!validateLogin" value="Check Availability Hidden Button" onclick="txtFocus();"/>
+
+				</td>
+			</tr>				
+
+			<tr>
+				<td><label for="loginId">Login Id<span class="mandatory">*</span></label></td>
+				<td>
+					<input type="text" name="loginId" maxlength="35" value="" id="loginId" class="txtbox" onblur="validateLoginId(this.value); " aria-required="true" aria-describedby="loginIdError"/><div id="wwgrp_loginId" class="wwgrp">
+<div id="wwctrl_loginId" class="wwctrl">
+</div> </div>
+
+					<span class="mandatory"></span>
+					<span class="success"></span>
+					<span class="hide" id="loginIdError"></span>
+				</td>
+				<td>
+					<a href="javascript:document.getElementById('checkLogin').click()" title="Check Availability" onclick="return checkSpecialChar();">Check Availability</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td><label for="pwd">Password<span class="mandatory">*</span></label></td>
+				<td>
+					<input type="password" name="pwd" maxlength="14" id="pwd" class="txtbox" onblur="validatePassword(this.value)" aria-required="true" aria-describedby="pwdError"/><div id="wwgrp_pwd" class="wwgrp">
+<div id="wwctrl_pwd" class="wwctrl">
+</div> </div>
+
+						<span class="hide" id="pwdError"></span>
+				</td>
+				<td><a href="javascript:;" onClick="window.open('/AppOnlineProject/onlineHtml/passwordPolicy.html','myWin','scrollbars=no,width=500,height=150');" title="Password Policy">Password Policy</a></td>
+			</tr>
+
+			<tr>
+				<td><label for="confirmPwd">Confirm Password<span class="mandatory">*</span></label></td>
+				<td colspan="2">
+					<input type="password" name="confirmPwd" maxlength="14" id="confirmPwd" class="txtbox" onblur="validateConfirmPassword(this.value)" aria-required="true" aria-describedby="confirmPwdError"/><div id="wwgrp_confirmPwd" class="wwgrp">
+<div id="wwctrl_confirmPwd" class="wwctrl">
+</div> </div>
+
+					 <span class="hide" id="confirmPwdError"></span>
+				</td>
+			</tr>
+
+			<tr>
+				<td><label for="hintQues">Hint Question<span class="mandatory">*</span></label></td>
+				<td colspan="2">
+					
+					
+		              <select name="hintQues" id="hintQues" class="dropdown-box" title="Hint Question will help in password recovery, if you forget your password." onblur="validateHintQues(this.value);" aria-required="true" aria-describedby="hintQuesError">
+    <option value=""
+    >----- Select -----</option>
+    <option value="Birth City">Birth City</option>
+    <option value="Colour">Favourite Colour</option>
+    <option value="Favourite Cricketer">Favourite Cricketer</option>
+    <option value="Favourite Food">Favourite Food</option>
+    <option value="First School">First School</option>
+    <option value="Make of First car Owned">Make of First car Owned</option>
+    <option value="Mother's Maiden Name">Mother's Maiden Name</option>
+
+
+</select>
+<div id="wwgrp_hintQues" class="wwgrp">
+<div id="wwctrl_hintQues" class="wwctrl">
+</div> </div>
+
+						<span class="hide" id="hintQuesError"></span> 
+					
+				</td>
+			</tr>
+
+			<tr>
+				<td><label for="hintAns">Hint Answer<span class="mandatory">*</span></label></td>
+				<td colspan="2">
+					<input type="text" name="hintAns" maxlength="35" value="" id="hintAns" class="txtbox" title="Hint Answer will be required for password recovery, if you forget your password." onblur="validateHintAns(this.value);" aria-required="true" aria-describedby="hintAnsError"/><div id="wwgrp_hintAns" class="wwgrp">
+<div id="wwctrl_hintAns" class="wwctrl">
+</div> </div>
+
+						<span class="hide" id="hintAnsError"></span>
+				</td>
+			</tr>
+
+			<tr>
+				<td><label for="test123">Enter Characters Displayed <span class="mandatory">*</span></label></td>
+				
+				<td colspan="2">
+					<img width="185" src="/AppOnlineProject/PspTest01Captcha09S.awsti?x=1551087502162"	id="captcha" alt="Captcha" title="Enter Captcha"><br/>
+					<a href="#" onclick=" document.getElementById('captcha').src = document.getElementById('captcha').src + '?' + (new Date()).getMilliseconds()" title="Change the picture displayed">
+						Change the picture displayed</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>&nbsp;</td>
+				<td colspan="2"><input type="text" name="test123" value="" id="test123" class="txtbox" onblur="validateCaptcha(this.value);" aria-required="true" aria-describedby="testError"/><div id="wwgrp_test123" class="wwgrp">
+<div id="wwctrl_test123" class="wwctrl">
+</div> </div>
+
+				<span class="hide" id="testError"></span>
+				</td>
+			</tr>
+			</table>
+			
+			<div class="buttons" style="margin-top: 20px;">
+				<input type="submit" id="frmSample_register" name="register" value="Register" class="bt" onclick="return checkSpecialChar();"/>
+
+		            <input type="submit" id="frmSample_clear" name="action:UserRegistrationActionDBAuth!clear" value="Clear" class="bt"/>
+
+			</div>
+</form>
+
+
+
+
+</div>
+
+<script type ="text/javascript" language="javascript">
+	if(document.getElementById('emailloginSameyes').checked){
+		document.getElementById('loginId').readOnly = true;
+	}
+	document.getElementById("checkLogin").style.display = "none";
+	document.getElementById('test123').value='';
+</script>
+<script type="text/javascript" language="JavaScript">
+	document.forms['frmSample'].dcdrLocation.focus();
+</script>
+<style type="text/css">
+@-moz-document url-prefix() {
+fieldset{margin-left:-10px;}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+fieldset{margin-left:-10px; }
+}
+</style>
+
+
+					</td>
+					</tr>
+					</table>	
+					</td>
+				</tr>
+				</table>
+			</div>
+		 </td>
+		</tr>
+		<tr>
+			<td colspan="3" valign="top" bgcolor="#ffffff" width="100%">
+				
+
+
+
+
+<script type="text/javascript">
+function openPolicy(id,ht) {
+		var a = window.open("/AppOnlineProject/onlineHtml/"+id+".html","News","scrollbars=yes,menubar=no,height="+ht+",width=810,resizable=yes,toolbar=no,location=no,status=no,top=15,left=15");
+		a.focus();
+		return false;
+		
+	}
+
+function openPopupForSms(mylink, windowname)
+{	
+	if (! window.focus)return true;
+	
+	var href;
+	if(typeof(mylink) == 'string')
+  	 href=mylink;
+  	 
+	else
+   		href=mylink.href;
+	var a=window.open(href, windowname, "scrollbars=yes,menubar=no,height=600,width=810,resizable=yes,toolbar=no,location=no,status=no,top=15,left=15");
+	a.focus();	   
+
+	return false;
+}
+
+</script>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" background="/AppOnlineProject/images/BG_Tile.jpg">
+        <tr>
+        <td align="left" valign="top">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="185" align="left" valign="top" class="Footer_Upper_Bar">
+         	 External Links
+          </td>
+          <td width="186" align="left" valign="top" class="Footer_Upper_Bar">
+         	 Legal Information
+         </td>
+         <td width="135" align="left" valign="top" class="Footer_Upper_Bar">
+         	Help
+         </td>	
+         <td width="206" align="left" valign="top" class="Footer_Upper_Bar">
+         	 Connect with Us
+          </td>
+          <td  width="242" align="left" valign="top" class="Footer_Upper_Bar" style="border-right:0px"></td>
+          </tr>
+          </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" background="/AppOnlineProject/images/BG_Tile.jpg">
+              <tr>
+                <td width="190" align="left" valign="top" class="Footer_Right_BRD"><div class="Footer_External_Links">
+                    <ul>
+                      <li><a href="http://www.mea.gov.in/" target="_blank" title="Ministry of External Affairs(External website that opens in a new window)">Ministry of External Affairs<span class="hide">Information about Ministry of External Affairs (External website that opens in a new window)</span></a></li>
+					<li><a href="http://india.gov.in/" target="_blank" title="National Portal of India(External website that opens in a new window)">National Portal of India<span class="hide">Information about National Portal of India (External website that opens in a new window)</span></a></li>
+					<li><a href="https://indianvisaonline.gov.in/visa/tvoa.html" target="_blank" title="Visa On Arrival(External website that opens in a new window)">Visa On Arrival<span class="hide">Information about National Portal of India (External website that opens in a new window)</span></a></li>
+					<li><a href="http://www.boi.gov.in/" target="_blank" title="Bureau of Immigration(External website that opens in a new window)">Bureau of Immigration<span class="hide">Information about Bureau of Immigration (External website that opens in a new window)</span></a></li>
+					<li><a href="https://mha.gov.in/division_of_mha/foreigners-division" target="_blank" title="Foreigners Division(External website that opens in a new window)">Foreigners Division, MHA <span class="hide">Information about Foreigners Division (External website that opens in a new window)</span></a></li>
+					<li><a href="http://www.nvsp.in" target="_blank" title="National Voters' Services Portal(External website that opens in a new window)">National Voters' Services Portal<span class="hide">Information about National Voters' Services Portal (External website that opens in a new window)</span></a></li>
+                      <li></li>
+                    </ul>
+                  </div></td>
+
+<td width="192" align="left" valign="top" class="Footer_Right_BRD"><div class="Legal_Box">
+                    <div class="legal_links">
+                      <ul>
+                        <li><a href="#" onclick="return openPolicy('termsAndConditions',495);">Terms &amp; Conditions</a></li>
+						<li><a href="#" onclick="return openPolicy('privacyPolicy',635);">Privacy Policy</a></li>
+						<li><a href="#" onclick="return openPolicy('copyrightPolicy',180);">Copyright Policy</a></li>
+						<li><a href="#" onclick="return openPolicy('hyperlinkingPolicy',545)" target="_blank">Hyperlinking Policy</a></li>
+                      </ul>
+                    </div>
+                  </div></td>
+                  <td width="141" align="left" valign="top" class="Footer_Right_BRD">
+                  <div class="Help_Box">
+                    <div class="legal_links">
+                      <ul>
+                      	<li><a href="/AppOnlineProject/online/faqMainPage">FAQs</a></li>
+                        <li><a href="/AppOnlineProject/ccgm/callCenterOnlineGrievance">Grievance/Feedback  </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  </td>
+                   <td width="211" align="left" valign="top" class="Footer_Right_BRD">
+                   <div class="Connect_Box">
+                    <div class="Connect_Box_Icon">
+					<table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+							 <td><a href="http://www.mea.gov.in/mea-on-facebook.htm" target="_blank" title="Facebook(External website that opens in a new window)"><span  style="width:30px; float:left; display:inline; height:30px; margin-top:5px;margin-left:8px; background:url(/AppOnlineProject/images/homeImages.JPG) -307px -30px;"></span><span class="hide">Connect with MEA at Facebook (External website that opens in a new window)</span></a></td>
+							 <td><a href="http://www.mea.gov.in/mea-on-twitter.htm" target="_blank" title="Twitter(External website that opens in a new window)"><span  style="width:30px; float:left; display:inline; height:30px; margin-top:5px;margin-left:8px; background:url(/AppOnlineProject/images/homeImages.JPG) -309px -90px;"></span><span class="hide">Connect with MEA at Twitter (External website that opens in a new window)</span></a></td>
+							 <td><a href="http://www.mea.gov.in/mea-on-youtube.htm"  target="_blank" title="Youtube(External website that opens in a new window)" ><span  style="width:30px; float:left; display:inline; height:30px; margin-top:5px;margin-left:8px; background:url(/AppOnlineProject/images/homeImages.JPG) -309px -122px;"></span><span class="hide">Connect with MEA at Youtube (External website that opens in a new window)</span></a></td>
+							 <td><a href="http://www.flickr.com/photos/meaindia"  target="_blank" title="Flickr(External website that opens in a new window)" ><span  style="width:30px; float:left; display:inline; height:30px; margin-top:5px;margin-left:8px; background:url(/AppOnlineProject/images/homeImages.JPG) -307px -60px;"></span><span class="hide">Connect with MEA at Flickr (External website that opens in a new window)</span></a></td>
+                            </tr>
+                          </table>
+                     
+                    </div>
+                  </div>
+                  </td>
+                  
+                  <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td align="center" valign="middle" class="Footer_Lower_Bar">
+          <div style="text-align:center;width:980px" class="copyright">© Content Owned by Ministry of External Affairs, Government of India</div></td>
+		  
+		  </tr>
+		  <tr><td align="left" valign="middle" class="Footer_Lower_Bar">
+          
+          <div style="width:980px; text-align: center;" class="tcs_web_link" >Site Maintained by&nbsp;<a target="_blank" href="http://www.tcs.com/Pages/default.aspx" title="Tata Consultancy Services Ltd.(External website that opens in a new window)">Tata Consultancy Services Ltd.<span class="hide">Information about Tata Consultancy Services Limited (External website that opens in a new window)</span></a></div>
+          </td>
+        </tr>
+        <tr>
+		<td align="left" valign="middle" class="Footer_Lower_Bar">
+			<div style="text-align: center; width:980px; ">
+				Best Viewed in
+			 	<a style="color:#fff;" href="http://windows.microsoft.com/en-US/internet-explorer/downloads/ie" target="_blank" title="Download the latest version of Internet Explorer (External website that opens in a new window)">Internet Explorer 8.0<span class="hide">Information about latest version of Internet Explorer</span></a>
+			 	and above at resolution 1024 X 768  
+			</div>
+		</td>
+		</tr>
+		<tr>
+		<td align="left" valign="middle" class="Footer_Lower_Bar">
+		<div class="copyright" style="width:980px; text-align: center;">Last Updated on&nbsp;July 2, 2018</div></td>
+		</tr>
+      </table>
+
+
+			</td>
+	 </tr>
+</table>
+</td>
+</tr>
+</table>
+</html>

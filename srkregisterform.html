@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input[type=text] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+h2{
+  color: Navy;
+  text-align: center;
+}
+
+</style>
+
+<style>
+.button {
+  background-color: Navy; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+}
+</style>
+</head>
+<body>
+
+<center>
+
+
+<form>
+
+<h2>User Registration</h2>
+  <label for="fname">First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="email">Email-ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="email" name="email"><br>
+  <label for="lname">Do you want your Login ID to be same as Email-ID</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="radio"  value="Yes" checked>Yes&nbsp;&nbsp;
+  <input type="radio"  value="No">No<br><br><br>
+  <label for="loginid">Login ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="loginid" name="loginid"><br>
+  <label for="pwd">Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+  <input type="text" id="pwd" name="pwd"><br>
+  <label for="confirmpwd">Confirm Password:</label>
+  <input type="text" id="confirmpwd" name="confirmpwd"><br>
+</form>
+</center>
+</body>
+<body>
+<br>
+<center>
+<button class="button button1">Submit</button>&nbsp;&nbsp;
+</center>
+</body>
+</html>

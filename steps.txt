@@ -1,0 +1,15 @@
+Steps to be followed :
+1.Install the xampp file in your personal computer then click setup and run the file.
+2.Now search for xampp control panel and click it.
+3.Start apache,MYSql,FileZilla,Mercury,Tomcat.
+4.Open localdisk C,next xampp,next htdocs and place the mini project files folder in it.
+5.Open chrome type "localhost/Passport Simulation" in url and click enter.
+6.now first register and then login.
+7.now apply for passport by filling passport application.
+8.now if you want u can check your passport application status.
+9.book slot for appointment.
+10.now admin and police login and either accepts or rejects the application.
+11.now regional officer login and accepts or rejects appointment.
+12.you can check the passport status by selecting passportstatus option.
+13.after appointment he verifies the application and accepts or rejects it.
+14.if all the the officers accepts you will recieve passport.
